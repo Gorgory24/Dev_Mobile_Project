@@ -36,4 +36,11 @@
         android:onClick="Tryagain"
         android:textAllCaps="false"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sauvegarder Score"
+        android:onClick="Save"
+        android:textAllCaps="false"/>
 </LinearLayout>

@@ -12,7 +12,7 @@ import static android.os.Build.VERSION_CODES.M;
 
 public class Scoring extends AppCompatActivity {
 
-
+    int s;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,19 +20,18 @@ public class Scoring extends AppCompatActivity {
 
         TextView Score = (TextView) findViewById(R.id.score);
         TextView Hscore = (TextView) findViewById(R.id.Hscore);
-
-        int score = getIntent().getIntExtra("Score", 0);
-        Score.setText(score + "");
+        s = getIntent().getIntExtra("Score", 0);
+        Score.setText(s + "");
 
         SharedPreferences sharedpreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
         int HS = sharedpreferences.getInt("Hscore", 0);
 
-        if(score > HS)
+        if(s > HS)
         {
-            Hscore.setText("High Score : " + score);
+            Hscore.setText("High Score : " + s);
 
             SharedPreferences.Editor editor = sharedpreferences.edit();
-            editor.putInt("Hscore", score);
+            editor.putInt("Hscore", s);
             editor.commit();
         }
         else
@@ -43,5 +42,12 @@ public class Scoring extends AppCompatActivity {
     public void Tryagain(View view)
     {
         startActivity(new Intent(getApplicationContext(), com.example.testproj5.MainActivity.class));
+    }
+
+    public void Save(View view)
+    {
+        Intent intent= new Intent(getApplicationContext(), Allscore.class);
+        intent.putExtra("Score", s);
+        startActivity(intent);
     }
 }

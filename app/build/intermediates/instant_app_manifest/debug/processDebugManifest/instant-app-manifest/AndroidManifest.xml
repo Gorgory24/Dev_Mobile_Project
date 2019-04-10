@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.testproj5.Allscore" />
         <activity android:name="com.example.testproj5.Scoring" />
         <activity android:name="com.example.testproj5.MainActivity" >
             <intent-filter>
