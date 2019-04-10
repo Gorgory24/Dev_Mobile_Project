@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Score : 0"
+        android:textSize="18dp"
+        android:paddingRight="5dp"
+        android:gravity="right"/>
+    <TextView
+        android:id="@+id/vie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Vie : 0"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/Start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Touchez pour jouer"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:textColor="@android:color/black"
+        />
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/vaisseau"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/vaisseau2" />
+
+        <ImageView
+            android:id="@+id/meteor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:background="@drawable/meteore" />
+
+        <ImageView
+            android:id="@+id/meteor1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/meteore" />
+
+        <ImageView
+            android:id="@+id/meteor2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@drawable/meteore" />
+
+        <ImageView
+            android:id="@+id/meteor3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/meteore" />
+
+        <ImageView
+            android:id="@+id/meteor4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/meteore" />
+    </FrameLayout>
+</RelativeLayout>
