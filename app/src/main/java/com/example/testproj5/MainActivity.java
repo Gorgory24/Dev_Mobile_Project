@@ -82,6 +82,12 @@ public class MainActivity extends AppCompatActivity {
         vieLabel.setText("Vie : " + vie);
         scoreLabel.setText("Score : " + score);
         vaisseauX = ScreenWidth / 2;
+
+        meteorX = (int) (Math.random() * ScreenWidth);
+        meteor1X = (int) (Math.random() * ScreenWidth);
+        meteor2X = (int) (Math.random() * ScreenWidth);
+        meteor3X = (int) (Math.random() * ScreenWidth);
+        meteor4X = (int) (Math.random() * ScreenWidth);
     }
 
     public void changePos()

@@ -5,40 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Score : 0"
-        android:textSize="18dp"
-        android:paddingRight="5dp"
-        android:gravity="right"/>
-    <TextView
-        android:id="@+id/vie"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Vie : 0"
-        android:textSize="18dp"
-        android:paddingLeft="5dp"
-        android:gravity="left"
-        android:textColor="@android:color/black"
-        />
-
-    <TextView
-        android:id="@+id/Start"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Touchez pour jouer"
-        android:textSize="30dp"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="300dp"
-        android:textColor="@android:color/black"
-        />
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/star"/>
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Score : 0"
+            android:textSize="18dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/vie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Vie : 0"
+            android:textSize="18dp"
+            android:paddingLeft="5dp"
+            android:gravity="left"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/Start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Touchez pour jouer"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="300dp"
+            android:textColor="@android:color/white"
+            />
 
         <ImageView
             android:id="@+id/vaisseau"
