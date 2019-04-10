@@ -41,12 +41,12 @@ public class Scoring extends AppCompatActivity {
     }
     public void Tryagain(View view)
     {
-        startActivity(new Intent(getApplicationContext(), com.example.testproj5.MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), com.example.testproj5.Start.class));
     }
 
     public void Save(View view)
     {
-        Intent intent= new Intent(getApplicationContext(), Allscore.class);
+        Intent intent= new Intent(getApplicationContext(), SaveScore.class);
         intent.putExtra("Score", s);
         startActivity(intent);
     }

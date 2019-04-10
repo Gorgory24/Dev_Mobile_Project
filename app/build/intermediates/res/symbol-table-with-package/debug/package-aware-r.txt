@@ -654,8 +654,8 @@ id Hscore
 id META
 id SHIFT
 id SYM
-id Score
 id Start
+id ValidButton
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -727,6 +727,7 @@ id italic
 id left
 id line1
 id line3
+id list
 id listMode
 id list_item
 id message
@@ -749,6 +750,7 @@ id parentPanel
 id percent
 id progress_circular
 id progress_horizontal
+id pseudo
 id radio
 id right
 id right_icon
@@ -839,9 +841,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_allscore
+layout activity_all_score
 layout activity_main
+layout activity_savescore
 layout activity_scoring
+layout activity_start
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
