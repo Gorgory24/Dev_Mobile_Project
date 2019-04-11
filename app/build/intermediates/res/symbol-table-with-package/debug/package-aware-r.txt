@@ -654,6 +654,7 @@ id Hscore
 id Lejoueur
 id Lescore
 id META
+id Menu
 id SHIFT
 id SYM
 id Start
