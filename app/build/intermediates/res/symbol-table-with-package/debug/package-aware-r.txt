@@ -651,6 +651,8 @@ id ALT
 id CTRL
 id FUNCTION
 id Hscore
+id Lejoueur
+id Lescore
 id META
 id SHIFT
 id SYM
@@ -846,6 +848,7 @@ layout activity_main
 layout activity_savescore
 layout activity_scoring
 layout activity_start
+layout activity_textlist
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
