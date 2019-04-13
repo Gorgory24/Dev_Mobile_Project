@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".AllScore">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="350dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour au menu"
+        android:onClick="Menu"
+        android:layout_marginLeft="250dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_centerHorizontal="true"
+        android:text="Entrez le numéro de score à supprimer"
+        android:textColor="@android:color/holo_orange_dark"
+        />
+
+    <EditText
+        android:id="@+id/ndel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="@android:color/holo_orange_dark"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:text="Supprimer"
+        android:onClick="Delete"/>
+
+</RelativeLayout>
